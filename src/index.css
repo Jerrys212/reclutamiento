@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+:root {
+    --accent: #ffb300;
+    --primary: #78909c;
+    --warn: #d32f2f;
+    --dark-accent: #fb8c00;
+    --dark-primary: #616161;
+    --dark-warn: #f4511e;
+    --blanco10: rgba(255, 255, 255, 0.1);
+    --blanco25: rgba(255, 255, 255, 0.25);
+    --blanco50: rgba(255, 255, 255, 0.5);
+    --blanco75: rgba(255, 255, 255, 0.75);
+    --blanco: #ffffff;
+    --negro10: rgba(25, 28, 37, 0.05);
+    --negro25: rgba(25, 28, 37, 0.25);
+    --negro50: rgba(25, 28, 37, 0.5);
+    --negro75: rgba(25, 28, 37, 0.75);
+    --verde: #6f962b;
+    --mdc-list-list-item-label-text-size: 14px;
+    --mdc-table-text-size: 14px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: lightgray;
+}
