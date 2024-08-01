@@ -29,6 +29,7 @@ import {
     EditIcon,
 } from "../exports";
 import { Vacante } from "../interfaces";
+import VacantesModal from "../components/VacantesModal";
 
 const Vacantes = () => {
     const vacantesData: Vacante[] = [
@@ -128,6 +129,8 @@ const Vacantes = () => {
                 </TableContainer>
                 <TablePagination rowsPerPageOptions={[5, 10, 25]} component="div" count={filteredVacantes.length} rowsPerPage={rowsPerPage} page={page} onPageChange={handleChangePage} onRowsPerPageChange={handleChangeRowsPerPage} />
             </Paper>
+
+            <VacantesModal />
         </>
     );
 };

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { AppBar, Box, Toolbar, Typography, Button, IconButton, MenuIcon, Drawer, List, CloseIcon } from "../exports/index";
+import { AppBar, Box, Toolbar, Typography, Button, IconButton, MenuIcon, Drawer, List, CloseIcon, Tooltip, LogOutIcon } from "../exports/index";
 import { useState } from "react";
 import CustomList from "./CustomList";
 
@@ -23,7 +23,11 @@ const Header = () => {
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             Reclutamiento Telo
                         </Typography>
-                        <Button color="inherit">Login</Button>
+                        <Tooltip title="Modificar Vacante">
+                            <IconButton aria-label="edit" size="large" sx={{ color: "#fff" }}>
+                                <LogOutIcon fontSize="inherit" />
+                            </IconButton>
+                        </Tooltip>
                     </Toolbar>
                 </AppBar>
             </Box>
